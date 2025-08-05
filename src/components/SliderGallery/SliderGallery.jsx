@@ -1,9 +1,26 @@
 import React, { useEffect, useState } from "react";
-import hero1 from "../../assets/hero-bg.jpg";
-import hero2 from "../../assets/hero.jpg";
-import hero3 from "../../assets/img.jpg";
+import slider from '../../assets/slider.jpg';
+import slider2 from '../../assets/slider-2.jpg';
+import slider3 from '../../assets/slider-3.jpg';
+import slider4 from '../../assets/slider-4.jpg';
+import slider5 from '../../assets/slider-5.jpg';
+import slider6 from '../../assets/slider-6.jpg';
+import slider7 from '../../assets/slider-7.jpg';
+import slider8 from '../../assets/slider-8.jpg';
+import slider9 from '../../assets/slider-9.jpg';
 
-const images = [hero1, hero2, hero3];
+const images = [
+    slider,
+    slider2,
+    slider3,
+    slider4,
+    slider5,
+    slider6,
+    slider7,
+    slider8,
+    slider9,
+
+];
 
 const HeroSlider = () => {
   const [current, setCurrent] = useState(0);
@@ -16,7 +33,7 @@ const HeroSlider = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Képek */}
       {images.map((img, idx) => (
         <img
@@ -30,17 +47,10 @@ const HeroSlider = () => {
       ))}
 
       {/* Fekete áttetsző overlay */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-black/0"></div>
 
       {/* Gomb a Collections részre */}
-      <div className="relative z-10 text-center">
-        <a
-          href="#collections"
-          className="inline-block bg-white text-black px-6 py-3 rounded-full text-base font-semibold hover:bg-gray-200 transition"
-        >
-          Explore Collections
-        </a>
-      </div>
+    
     </section>
   );
 };
