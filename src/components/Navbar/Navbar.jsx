@@ -42,7 +42,7 @@ const Navbar = () => {
               HOME
             </Link>
             <Link
-              to="/collecions"
+              to="/collection"
               className="text-[var(--main-text-color)] hover:text-[#191970] transition"
             >
               COLLECTIONS
