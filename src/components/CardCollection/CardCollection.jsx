@@ -35,7 +35,6 @@ const Card = ({
       </svg>
     </button>
 
-    {/* Image */}
     <img
       src={image}
       alt={title}
@@ -44,12 +43,7 @@ const Card = ({
 
     {/* Content */}
     <div className="relative border border-gray-100 bg-white p-6">
-      <p className="text-gray-700">
-        {price}
-        {oldPrice && (
-          <span className="text-gray-400 line-through ml-2">{oldPrice}</span>
-        )}
-      </p>
+      <p className="text-gray-700">{price}</p>
 
       <h3 className="mt-1.5 text-lg font-medium text-gray-900">{title}</h3>
 
@@ -78,6 +72,9 @@ const Card = ({
           </li>
           <li>
             <strong>Strap:</strong> {features.strap}
+          </li>
+          <li>
+            <strong>Weight:</strong> {features.weight}
           </li>
           <li>
             <strong>Power Reserve:</strong> {features.powerReserve}
